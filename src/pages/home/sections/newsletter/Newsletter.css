@@ -1,0 +1,76 @@
+.newsletter-content {
+    display: inline-block;
+    padding: 13.6rem 50rem;
+}
+
+.newsletter-content :not(.email-wrapper) {
+    text-align: center;
+}
+
+.newsletter-content h3 {
+    color: var(--dark-navy);
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 3.6rem;
+}
+
+.newsletter-content p {
+    color: var(--dark-navy);
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    opacity: 0.7;
+    margin-bottom: 5.7rem;
+    display: inline-block;
+}
+
+.email-wrapper {
+    height: 7rem;
+    margin-bottom: 3.3rem;
+    position: relative;
+}
+
+.email-wrapper input {
+    width: 60%;
+    height: 100%;
+    border: 0.1rem solid var(--gray);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: var(--dark-navy);
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    padding-left: 2.8rem;
+}
+
+.email-wrapper button {
+    width: 40%;
+    height: 100%;
+    background-color: var(--regular-green);
+    color: var(--pure-white);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+.note-wrapper img {
+    margin-right: 2rem;
+}
+
+.note-wrapper img,
+.note-wrapper p {
+    display: inline-block;
+}

@@ -5,6 +5,7 @@ import { ProductSlider } from "./sections/product-slider/ProductSlider";
 import { WorkingProcess } from "./sections/working-process/WorkingProcess";
 import { Marketing } from "./sections/marketing/Marketing";
 import { Testimonial } from "./sections/testimonial/Testimonial";
+import { Newsletter } from "./sections/newsletter/Newsletter";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <WorkingProcess />
             <Marketing />
             <Testimonial />
+            <Newsletter />
         </>
     );
 };
