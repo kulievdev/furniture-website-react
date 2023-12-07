@@ -2,6 +2,7 @@ import { TopNavigation } from "./sections/top-navigation/TopNavigation";
 import { Hero } from "./sections/hero/Hero";
 import { Features } from "./sections/features/Features";
 import { ProductSlider } from "./sections/product-slider/ProductSlider";
+import { WorkingProcess } from "./sections/working-process/WorkingProcess";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero />
             <Features />
             <ProductSlider />
+            <WorkingProcess />
         </>
     );
 };
