@@ -2,7 +2,7 @@ import "./Footer.css";
 
 const FooterCard = (props) => {
     return (
-        <div class="footer-content-card">
+        <div className="footer-content-card">
             <h4>{props.title}</h4>
             <ul>
                 <li>{props.info1}</li>
@@ -16,9 +16,9 @@ const FooterCard = (props) => {
 const Footer = () => {
     return (
         <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="logo-about footer-content-card">
+            <div className="container">
+                <div className="footer-content">
+                    <div className="logo-about footer-content-card">
                         <h4>
                             Whiter<span>.</span>
                         </h4>
