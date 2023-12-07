@@ -5,14 +5,14 @@ import shapeImg from "../../../../assets/images/shape-2.svg";
 const Marketing = () => {
     return (
         <section id="marketing">
-            <div class="marketing-content container">
-                <div class="marketing-left">
-                    <div class="marketing-image-wrapper">
+            <div className="marketing-content container">
+                <div className="marketing-left">
+                    <div className="marketing-image-wrapper">
                         <img src={wifeHusbandImg} alt="" />
                         <img src={shapeImg} alt="" />
                     </div>
                 </div>
-                <div class="marketing-right">
+                <div className="marketing-right">
                     <div>
                         <h3>Spend your happy time with full comfort.</h3>
                         <p>
@@ -20,7 +20,7 @@ const Marketing = () => {
                             moments, surrounded by unmatched tranquility and
                             exquisite relaxation.
                         </p>
-                        <div class="explore-wrapper">
+                        <div className="explore-wrapper">
                             <hr />
                             <span>Explore Our Products</span>
                         </div>
