@@ -3,6 +3,7 @@ import { Hero } from "./sections/hero/Hero";
 import { Features } from "./sections/features/Features";
 import { ProductSlider } from "./sections/product-slider/ProductSlider";
 import { WorkingProcess } from "./sections/working-process/WorkingProcess";
+import { Marketing } from "./sections/marketing/Marketing";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Features />
             <ProductSlider />
             <WorkingProcess />
+            <Marketing />
         </>
     );
 };
