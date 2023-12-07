@@ -2,7 +2,7 @@ import "./WorkingProcess.css";
 
 const WorkingProcessCard = (props) => {
     return (
-        <div class="steps-wrapper">
+        <div className="steps-wrapper">
             <span>{props.number}</span>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
@@ -15,7 +15,7 @@ const WorkingProcessCard = (props) => {
 const WorkingProcess = () => {
     return (
         <section id="working-process">
-            <div class="working-process-content container">
+            <div className="working-process-content container">
                 <h2>Our working process</h2>
                 <WorkingProcessCard
                     number="01."
