@@ -1,13 +1,86 @@
-body {
+/* universal selector */
+
+* {
+    padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    font-size: 0;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+/* font family */
+
+@font-face {
+    font-family: "Mazzard";
+    src: url("../src/assets/fonts/Mazzard-Regular.otf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Mazzard";
+    src: url("../src/assets/fonts/Mazzard-SemiBold.otf") format("truetype");
+    font-weight: 600;
+}
+
+/* variables */
+
+:root {
+    /* colors */
+    --pure-white: #fff;
+    --super-dark-navy: #213053;
+    --orange: #f18b62;
+    --blue: #1787fc;
+    --orange-red: #ff794d;
+    --light-blue: #ebf5ff;
+    --dark-navy: #1d263a;
+    --regular-green: #20bfa9;
+    --mint-green: #d6ebe4;
+    --golden-yellow: #ffcd28;
+    --forest-green: #46b375;
+    --super-dark-grey: #2e2e36;
+    --gray: rgba(223, 223, 223, 0.7);
+    --dark-gray: #7f828a;
+    --super-dark-green: #105559;
+    --pearl-white: #f9fafb;
+    --pink: #f86c9c;
+    --light-gray: #f5f5f5;
+    --super-light-pink: #f5f5f5;
+    --super-dark-brown: #270000;
+    --red: #f8574c;
+    --dark-green: #2d947a;
+    --baby-pink: #fae2da;
+
+    /* font size */
+
+    --space-11: 1.1rem;
+    --space-13: 1.3rem;
+    --space-16: 1.6rem;
+    --space-18: 1.8rem;
+    --space-21: 2.1rem;
+    --space-24: 2.4rem;
+    --space-28: 2.8rem;
+    --space-32: 3.2rem;
+    --space-36: 3.6rem;
+    --space-42: 4.2rem;
+    --space-48: 4.8rem;
+    --space-60: 6rem;
+    --space-64: 6.4rem;
+    --space-70: 7rem;
+    --space-80: 8rem;
+    --space-96: 9.6rem;
+    --space-110: 11rem;
+}
+
+/* base css */
+
+body {
+    font-family: "Mazzard", sans-serif;
+}
+
+.container {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
 }

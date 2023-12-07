@@ -1,0 +1,47 @@
+.header-content {
+    padding: 4.2rem 15.2rem;
+}
+.logo {
+    display: inline-block;
+    color: var(--super-dark-navy);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    width: 10%;
+}
+
+.logo span {
+    color: var(--orange);
+    font-size: 2.4rem;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 5rem;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: inline-block;
+    color: var(--dark-navy);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.sign-in {
+    width: 10%;
+    text-align: right;
+}
