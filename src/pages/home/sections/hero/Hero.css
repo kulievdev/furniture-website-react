@@ -42,12 +42,12 @@
 
 .hero-right p:first-child {
     color: var(--orange-red);
-    font-size: 1.3rem;
+    font-size: var(--space-13);
     font-style: normal;
     font-weight: 600;
-    line-height: 2.2rem;
+    line-height: var(--space-22);
     letter-spacing: 0.6rem;
-    margin-bottom: 3.4rem;
+    margin-bottom: var(--space-34);
     text-transform: uppercase;
 }
 

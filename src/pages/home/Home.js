@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <TopNavigation />
-            {/* <Hero /> */}
+            <Hero />
             {/* <Features /> */}
             {/* <ProductSlider /> */}
             {/* <WorkingProcess /> */}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../../../../design-system/Logo";
+import Logo from "../../../../design-system/Logo/Logo";
 
 const links = [
     { text: "Products", link: "" },
@@ -24,7 +24,7 @@ const UnorderedList = styled.ul`
 `;
 const List = styled.li``;
 const Link = styled.a`
-    font-size: var(--space-17);
+    font-size: var(--space-18);
     color: var(--dark-navy);
     font-weight: 600;
     line-height: var(--space-30);
