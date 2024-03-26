@@ -14,34 +14,21 @@ const HeroSectionContainer = styled.div`
 `;
 const HeroImageContainer = styled.div`
     width: 40%;
-    padding: 9rem 0 9rem 7.6rem;
-`;
-
-const HeroImageWrapper = styled.div`
+    padding: 5rem 8rem;
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
 `;
 
 const HeroChairImage = styled.img`
-    width: 43.5rem;
-    height: 52.5rem;
-    z-index: 1;
-`;
-const HeroGreenCircle = styled.div`
-    width: 31.5rem;
-    height: 31.5rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 7rem;
-    left: 16rem;
-    background-color: var(--regular-green);
+    width: 100%;
 `;
 const HeroContent = styled.div`
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20rem 0 0;
+    padding: 5rem 8rem;
 `;
 const HeroSlogan = styled.p`
     color: var(--orange-red);
@@ -86,10 +73,7 @@ const Hero = () => {
         <HeroSection>
             <HeroSectionContainer>
                 <HeroImageContainer>
-                    <HeroImageWrapper>
-                        <HeroChairImage src={heroImg} alt="Chair Image" />
-                        <HeroGreenCircle />
-                    </HeroImageWrapper>
+                    <HeroChairImage src={heroImg} alt="Chair Image" />
                 </HeroImageContainer>
                 <HeroContent>
                     <HeroSlogan>Quality Design For ALl</HeroSlogan>
