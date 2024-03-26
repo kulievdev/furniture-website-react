@@ -9,7 +9,7 @@ const FeaturesSection = styled.section``;
 const FeaturesSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
-    padding: 10rem 12rem;
+    padding: 10rem 15rem;
 `;
 
 const FeaturesWrapper = styled.div`

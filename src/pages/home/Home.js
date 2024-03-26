@@ -1,7 +1,7 @@
 import TopNavigation from "./sections/top-navigation/TopNavigation";
 import Hero from "./sections/hero/Hero";
 import Features from "./sections/features/Features";
-import { ProductSlider } from "./sections/product-slider/ProductSlider";
+import ProductSlider from "./sections/product-slider/ProductSlider";
 import { WorkingProcess } from "./sections/working-process/WorkingProcess";
 import { Marketing } from "./sections/marketing/Marketing";
 import { Testimonial } from "./sections/testimonial/Testimonial";
@@ -14,7 +14,7 @@ const Home = () => {
             <TopNavigation />
             <Hero />
             <Features />
-            {/* <ProductSlider /> */}
+            <ProductSlider />
             {/* <WorkingProcess /> */}
             {/* <Marketing /> */}
             {/* <Testimonial /> */}
