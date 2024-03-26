@@ -1,46 +1,57 @@
-import "./WorkingProcess.css";
+import styled from "styled-components";
+import WorkingProcessCard from "./WorkingProcessCard";
 
-const WorkingProcessCard = (props) => {
-    return (
-        <div className="steps-wrapper">
-            <span>{props.number}</span>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
-            <hr />
-            <span>Learn More</span>
-        </div>
-    );
-};
+const WorkingProcessSection = styled.section``;
+const WorkingProcessSectionContainer = styled.div`
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 10rem 15rem;
+`;
+const WorkingProcessHeading = styled.h2`
+    color: var(--dark-navy);
+    font-size: var(--space-18);
+    font-weight: 600;
+    line-height: var(--space-30);
+    letter-spacing: 0.4rem;
+    opacity: 0.7;
+    margin-bottom: var(--space-110);
+    text-transform: uppercase;
+`;
+
+const WorkingProcessCardWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-110);
+`;
 
 const WorkingProcess = () => {
     return (
-        <section id="working-process">
-            <div className="working-process-content container">
-                <h2>Our working process</h2>
-                <WorkingProcessCard
-                    number="01."
-                    title="Discuss the Concept with us."
-                    description="Engage in an insightful conversation with our team to
-                        explore your project's vision, goals, and desired
-                        outcomes."
-                />
-                <WorkingProcessCard
-                    number="02."
-                    title="Confirm the provided design."
-                    description="Engage in an insightful conversation with our team to
-                        explore your project's vision, goals, and desired
-                        outcomes."
-                />
-                <WorkingProcessCard
-                    number="03."
-                    title="Get delivered the furniture on time."
-                    description="Our dedicated team prioritizes punctuality and efficient
-                    logistics to ensure that your furniture arrives
+        <WorkingProcessSection id="working-process">
+            <WorkingProcessSectionContainer>
+                <WorkingProcessHeading>
+                    Our working process
+                </WorkingProcessHeading>
+                <WorkingProcessCardWrapper>
+                    <WorkingProcessCard
+                        number="01."
+                        title="Discuss the concept with us."
+                        description="Engage in an insightful conversation with our team to explore your project's vision, goals, and desired outcomes."
+                    />
+                    <WorkingProcessCard
+                        number="02."
+                        title="Confirm the provided design."
+                        description="Engage in an insightful conversation with our team to explore your project's vision, goals, and desired outcomes."
+                    />
+                    <WorkingProcessCard
+                        number="03."
+                        title="Get delivered the furniture on time."
+                        description="Our dedicated team prioritizes punctuality and efficient logistics to ensure that your furniture arrives
                     precisely."
-                />
-            </div>
-        </section>
+                    />
+                </WorkingProcessCardWrapper>
+            </WorkingProcessSectionContainer>
+        </WorkingProcessSection>
     );
 };
 
-export { WorkingProcess };
+export default WorkingProcess;
