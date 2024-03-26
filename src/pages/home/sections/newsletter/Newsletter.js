@@ -5,8 +5,8 @@ const NewsletterSection = styled.section``;
 
 const NewsletterSectionContainer = styled.div`
     max-width: 160rem;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -6,7 +6,7 @@ import WorkingProcess from "./sections/working-process/WorkingProcess";
 import Marketing from "./sections/marketing/Marketing";
 import Testimonial from "./sections/testimonial/Testimonial";
 import Newsletter from "./sections/newsletter/Newsletter";
-import { Footer } from "./sections/footer/Footer";
+import Footer from "./sections/footer/Footer";
 
 const Home = () => {
     return (
@@ -19,7 +19,7 @@ const Home = () => {
             <Marketing />
             <Testimonial />
             <Newsletter />
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };
