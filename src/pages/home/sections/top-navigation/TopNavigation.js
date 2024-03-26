@@ -1,12 +1,19 @@
+import Logo from "../../../../design-system/Logo";
 import "./TopNavigation.css";
+
+const links = [
+    { text: "Products", link: "" },
+    { text: "Rooms", link: "" },
+    { text: "Inspiration", link: "" },
+    { text: "Support", link: "" },
+    { text: "Sign in", link: "" }
+];
 
 const TopNavigation = () => {
     return (
         <header>
             <div className="header-content container">
-                <p className="logo">
-                    Whiter<span>.</span>
-                </p>
+                <Logo />
                 <nav>
                     <ul>
                         <li>
