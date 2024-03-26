@@ -99,4 +99,4 @@ const Marketing = () => {
     );
 };
 
-export { Marketing };
+export default Marketing;
