@@ -1,57 +1,47 @@
-import "./Features.css";
-import ellipseMintImg from "../../../../assets/images/ellipse-mint.png";
-import ellipsePinkImg from "../../../../assets/images/ellipse-pink.png";
-import ellipseBlueImg from "../../../../assets/images/ellipse-blue.png";
-
 import heartImg from "../../../../assets/images/heart.svg";
 import zapImg from "../../../../assets/images/zap.svg";
 import headphonesImg from "../../../../assets/images/headphones.svg";
+import Feature from "./Feature";
+import styled from "styled-components";
 
-const Feature = (props) => {
-    return (
-        <div className="features-card">
-            <div className="features-image-wrapper">
-                <img src={props.img} alt="" />
-                <img src={props.svg} alt="" />
-            </div>
-            <div className="features-text-wrapper">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-            </div>
-        </div>
-    );
-};
+const FeaturesSection = styled.section``;
+
+const FeaturesSectionContainer = styled.div`
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 10rem 12rem;
+    display: flex;
+    gap: var(--space-60);
+    justify-content: space-between;
+`;
 
 const Features = () => {
     return (
-        <section id="features">
-            <div className="features-content container">
+        <FeaturesSection id="features">
+            <FeaturesSectionContainer>
                 <Feature
-                    img={ellipseMintImg}
-                    svg={heartImg}
-                    title="Best Quality"
-                    description="Uncompromising excellence delivered in every product
-                            and experience."
+                    imgSrc={heartImg}
+                    heading="Best Quality"
+                    description="Uncompromising excellence delivered in every product and experience."
+                    backgroundColor="var(--light-green)"
                 />
 
                 <Feature
-                    img={ellipsePinkImg}
-                    svg={zapImg}
-                    title="Fastest Delivery"
-                    description="Swift and efficient shipping to bring your order to
-                    you promptly."
+                    imgSrc={zapImg}
+                    heading="Fastest Delivery"
+                    description="Swift and efficient shipping to bring your order to you promptly."
+                    backgroundColor="var(--baby-pink)"
                 />
 
                 <Feature
-                    img={ellipseBlueImg}
-                    svg={headphonesImg}
-                    title="Great Support"
-                    description="Exceptional customer service to assist and guide you
-                    effectively."
+                    imgSrc={headphonesImg}
+                    heading="Great Support"
+                    description="Exceptional customer service to assist and guide you effectively."
+                    backgroundColor="var(--light-blue)"
                 />
-            </div>
-        </section>
+            </FeaturesSectionContainer>
+        </FeaturesSection>
     );
 };
 
-export { Features };
+export default Features;
