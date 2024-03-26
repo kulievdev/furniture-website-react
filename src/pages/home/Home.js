@@ -5,7 +5,7 @@ import ProductSlider from "./sections/product-slider/ProductSlider";
 import WorkingProcess from "./sections/working-process/WorkingProcess";
 import Marketing from "./sections/marketing/Marketing";
 import Testimonial from "./sections/testimonial/Testimonial";
-import { Newsletter } from "./sections/newsletter/Newsletter";
+import Newsletter from "./sections/newsletter/Newsletter";
 import { Footer } from "./sections/footer/Footer";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
             <WorkingProcess />
             <Marketing />
             <Testimonial />
-            {/* <Newsletter /> */}
+            <Newsletter />
             {/* <Footer /> */}
         </>
     );
