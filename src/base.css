@@ -54,14 +54,17 @@
     --space-11: 1.1rem;
     --space-13: 1.3rem;
     --space-16: 1.6rem;
+    --space-17: 1.7rem;
     --space-18: 1.8rem;
     --space-21: 2.1rem;
     --space-24: 2.4rem;
     --space-28: 2.8rem;
+    --space-30: 3rem;
     --space-32: 3.2rem;
     --space-36: 3.6rem;
     --space-42: 4.2rem;
     --space-48: 4.8rem;
+    --space-50: 5rem;
     --space-60: 6rem;
     --space-64: 6.4rem;
     --space-70: 7rem;
@@ -76,11 +79,14 @@ body {
     font-family: "Mazzard", sans-serif;
 }
 
-.container {
-    max-width: 160rem;
-    margin: 0 auto;
-}
-
 html {
     font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
