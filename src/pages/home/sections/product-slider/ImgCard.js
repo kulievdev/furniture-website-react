@@ -4,7 +4,7 @@ const Image = styled.img`
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: var(--space-16);
 `;
 
 const ImgCard = (props) => {
