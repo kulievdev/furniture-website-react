@@ -5,13 +5,40 @@ import styled from "styled-components";
 const TestimonialSection = styled.section``;
 
 const TestimonialSectionContainer = styled.div`
-    display: flex;
+    @media (min-width: 1100px) {
+        display: flex;
+    }
 `;
 
 const TestimonialContent = styled.div`
     background-color: var(--orange-red);
-    width: 50%;
-    padding: 24rem 18rem;
+    width: 100%;
+    padding: 10rem 2rem;
+
+    @media (min-width: 570px) {
+        padding: 16rem 10rem;
+    }
+
+    @media (min-width: 730px) {
+        padding: 24rem 18rem;
+    }
+
+    @media (min-width: 1100px) {
+        width: 50%;
+        padding: 12rem 6rem;
+    }
+
+    @media (min-width: 1140px) {
+        padding: 16rem 10rem;
+    }
+
+    @media (min-width: 1300px) {
+        padding: 20rem 14rem;
+    }
+
+    @media (min-width: 1610px) {
+        padding: 24rem 18rem;
+    }
 `;
 
 const TestimonialReview = styled.p`
@@ -61,8 +88,12 @@ const TestimonialReviewerLocation = styled.span`
 `;
 
 const TestimonialImageWrapper = styled.div`
-    width: 50%;
+    width: 100%;
     position: relative;
+
+    @media (min-width: 1100px) {
+        width: 50%;
+    }
 `;
 
 const TestimonialImage = styled.img`
