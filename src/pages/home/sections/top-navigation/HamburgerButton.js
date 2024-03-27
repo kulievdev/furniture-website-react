@@ -4,6 +4,7 @@ const HamburgerWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
+    cursor: pointer;
 
     @media (min-width: 1000px) {
         display: none;
