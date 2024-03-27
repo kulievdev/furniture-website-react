@@ -11,16 +11,34 @@ const ProductSliderSection = styled.section``;
 const ProductSliderSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
-    padding: 10rem 15rem;
+    padding: 10rem 2rem;
+
+    @media (min-width: 500px) {
+        padding: 10rem 5rem;
+    }
+
+    @media (min-width: 800px) {
+        padding: 10rem 15rem;
+    }
 `;
 
 const ProductSliderHeaderWrapper = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: var(--space-30);
     margin-bottom: var(--space-50);
+
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
 
 const ProductSliderHeading = styled.h2`
+    text-align: center;
     color: var(--dark-navy);
     font-size: var(--space-42);
     font-style: normal;
@@ -37,47 +55,52 @@ const ProductSliderArrowWrapper = styled.div`
 const ProductSliderArrow = styled.img``;
 
 const ProductSliderImageCardWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--space-18);
     height: 65rem;
+
+    @media (min-width: 1350px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 `;
 
-const LastImageCardWrapper = styled.div`
-    position: relative;
-    display: flex;
-`;
+// const LastImageCardWrapper = styled.div`
+//     position: relative;
+//     display: flex;
+// `;
 
-const LastImageCardPriceTagWrapper = styled.div`
-    display: flex;
-    background-color: var(--pure-white);
-    position: absolute;
-    border-radius: var(--space-10);
-    left: var(--space-16);
-    top: 52rem;
-    padding: var(--space-24) var(--space-30);
-`;
+// const LastImageCardPriceTagWrapper = styled.div`
+//     display: flex;
+//     background-color: var(--pure-white);
+//     border-radius: var(--space-10);
+//     position: absolute;
+//     left: var(--space-16);
+//     top: 52rem;
+//     padding: var(--space-24) var(--space-30);
+// `;
 
-const PriceTitleWrapper = styled.div`
-    margin-right: 5rem;
-`;
+// const PriceTitleWrapper = styled.div`
+//     margin-right: 5rem;
+// `;
 
-const Price = styled.span`
-    color: var(--orange-red);
-    font-size: var(--space-32);
-    font-weight: 600;
-    line-height: var(--space-42);
-    letter-spacing: -0.1rem;
-`;
+// const Price = styled.span`
+//     color: var(--orange-red);
+//     font-size: var(--space-32);
+//     font-weight: 600;
+//     line-height: var(--space-42);
+//     letter-spacing: -0.1rem;
+// `;
 
-const Title = styled.p`
-    color: var(--dark-navy);
-    font-size: var(--space-14);
-    font-weight: 600;
-    line-height: var(--space-22);
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-`;
+// const Title = styled.p`
+//     color: var(--dark-navy);
+//     font-size: var(--space-14);
+//     font-weight: 600;
+//     line-height: var(--space-22);
+//     letter-spacing: 0.4rem;
+//     text-transform: uppercase;
+// `;
 
 const ProductSlider = () => {
     return (
@@ -101,7 +124,9 @@ const ProductSlider = () => {
                 <ProductSliderImageCardWrapper>
                     <ImgCard img={darkChairImg} alt="Dark Chair" />
                     <ImgCard img={lightChairImg} alt="Light Chair" />
-                    <LastImageCardWrapper>
+                    <ImgCard img={couchImg} name="Couch" />
+
+                    {/* <LastImageCardWrapper>
                         <ImgCard img={couchImg} name="Couch" />
                         <LastImageCardPriceTagWrapper>
                             <PriceTitleWrapper>
@@ -110,7 +135,7 @@ const ProductSlider = () => {
                             </PriceTitleWrapper>
                             <ProductSliderArrow src={arrowRightImg} />
                         </LastImageCardPriceTagWrapper>
-                    </LastImageCardWrapper>
+                    </LastImageCardWrapper> */}
                 </ProductSliderImageCardWrapper>
             </ProductSliderSectionContainer>
         </ProductSliderSection>

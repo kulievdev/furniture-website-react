@@ -3,7 +3,7 @@ import styled from "styled-components";
 import OrangeBar from "../../../../design-system/OrangeBar/OrangeBar";
 
 const HeroSection = styled.main`
-    padding: 0 var(--space-16);
+    padding: 0 var(--space-20);
 
     @media (min-width: 621px) {
         padding: 0 var(--space-60);

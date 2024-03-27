@@ -10,7 +10,7 @@ const links = [
 ];
 
 const Header = styled.header`
-    padding: 0 var(--space-16);
+    padding: 0 var(--space-20);
 
     @media (min-width: 621px) {
         padding: 0 var(--space-60);

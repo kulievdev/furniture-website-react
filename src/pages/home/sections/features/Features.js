@@ -9,9 +9,12 @@ const FeaturesSection = styled.section``;
 const FeaturesSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
-    padding: 10rem 5rem;
+    padding: 10rem 2rem;
 
-    @media (min-width: 700px) {
+    @media (min-width: 500px) {
+        padding: 10rem 5rem;
+    }
+    @media (min-width: 800px) {
         padding: 10rem 15rem;
     }
 `;

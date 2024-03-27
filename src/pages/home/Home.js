@@ -14,7 +14,7 @@ const Home = () => {
             <TopNavigation />
             <Hero />
             <Features />
-            {/* <ProductSlider /> */}
+            <ProductSlider />
             {/* <WorkingProcess /> */}
             {/* <Marketing /> */}
             {/* <Testimonial /> */}
