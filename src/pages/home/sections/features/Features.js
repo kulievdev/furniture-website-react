@@ -9,14 +9,29 @@ const FeaturesSection = styled.section``;
 const FeaturesSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
-    padding: 10rem 15rem;
+    padding: 10rem 5rem;
+
+    @media (min-width: 700px) {
+        padding: 10rem 15rem;
+    }
 `;
 
 const FeaturesWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     gap: var(--space-60);
-    justify-content: space-between;
     margin-bottom: var(--space-80);
+
+    @media (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1250px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
 
 const DashedLine = styled.div`

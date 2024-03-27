@@ -2,8 +2,17 @@ import styled from "styled-components";
 
 const FeatureWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: var(--space-38);
+
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        gap: var(--space-38);
+    }
 `;
 
 const FeatureIconWrapper = styled.div`
@@ -23,11 +32,15 @@ const FeatureImage = styled.img`
 `;
 
 const FeatureTextWrapper = styled.div`
-    width: 60%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     gap: var(--space-16);
+
+    @media (min-width: 700px) {
+        width: 60%;
+    }
 `;
 
 const FeatureHeading = styled.h3`
