@@ -1,13 +1,19 @@
 import styled from "styled-components";
 import WorkingProcessCard from "./WorkingProcessCard";
 
-const WorkingProcessSection = styled.section`
-    background-color: yellow;
-`;
+const WorkingProcessSection = styled.section``;
 const WorkingProcessSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
-    padding: 10rem 15rem;
+    padding: 10rem 2rem;
+
+    @media (min-width: 500px) {
+        padding: 10rem 5rem;
+    }
+
+    @media (min-width: 800px) {
+        padding: 10rem 15rem;
+    }
 `;
 const WorkingProcessHeading = styled.h2`
     color: var(--dark-navy);
@@ -23,7 +29,11 @@ const WorkingProcessHeading = styled.h2`
 const WorkingProcessCardWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: var(--space-110);
+    gap: var(--space-70);
+
+    @media (min-width: 1220px) {
+        gap: var(--space-110);
+    }
 `;
 
 const WorkingProcess = () => {
