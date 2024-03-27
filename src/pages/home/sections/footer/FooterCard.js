@@ -3,7 +3,6 @@ import styled from "styled-components";
 const FooterCardWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: var(--space-52);
 `;
 
 const FooterTitle = styled.h4`
@@ -13,6 +12,11 @@ const FooterTitle = styled.h4`
     line-height: var(--space-22);
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    margin-bottom: var(--space-40);
+
+    @media (min-width: 600px) {
+        margin-bottom: var(--space-70);
+    }
 `;
 
 const Navigation = styled.nav``;
