@@ -9,14 +9,28 @@ const links = [
     { text: "Support", link: "" }
 ];
 
-const Header = styled.header``;
+const Header = styled.header`
+    padding: 0 var(--space-16);
+
+    @media (min-width: 621px) {
+        padding: 0 var(--space-60);
+    }
+
+    @media (min-width: 1000px) {
+        padding: 0;
+    }
+`;
 const NavContainer = styled.div`
     max-width: 160rem;
-    padding: 4rem 15rem;
+    padding: 4rem 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 1000px) {
+        padding: 4rem 15rem;
+    }
 `;
 const Navigation = styled.nav`
     display: none;

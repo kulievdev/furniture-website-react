@@ -1,10 +1,17 @@
 .logo {
     color: var(--super-dark-navy);
-    font-size: 2.4rem;
+    font-size: var(--space-30);
     font-weight: 700;
 }
 
 .logo span {
     color: var(--orange);
-    font-size: 2.4rem;
+    font-size: var(--space-30);
+}
+
+@media (min-width: 1000px) {
+    .logo,
+    .logo span {
+        font-size: 2.4rem;
+    }
 }
