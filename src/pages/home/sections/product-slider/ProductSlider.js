@@ -58,11 +58,11 @@ const ProductSliderImageCardWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-18);
-    height: 65rem;
 
     @media (min-width: 1350px) {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        height: 65rem;
     }
 `;
 

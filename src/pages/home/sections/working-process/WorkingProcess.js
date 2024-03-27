@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import WorkingProcessCard from "./WorkingProcessCard";
 
-const WorkingProcessSection = styled.section``;
+const WorkingProcessSection = styled.section`
+    background-color: yellow;
+`;
 const WorkingProcessSectionContainer = styled.div`
     max-width: 160rem;
     margin: 0 auto;
