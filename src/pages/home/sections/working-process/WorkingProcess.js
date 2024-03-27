@@ -52,7 +52,7 @@ const WorkingProcess = () => {
                     <WorkingProcessCard
                         number="02."
                         title="Confirm the provided design."
-                        description="Engage in an insightful conversation with our team to explore your project's vision, goals, and desired outcomes."
+                        description="Once you provide us with the design you envision, our experienced team will meticulously review and validate every aspect."
                     />
                     <WorkingProcessCard
                         number="03."
