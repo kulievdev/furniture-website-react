@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "../../../../design-system/Logo/Logo";
+import HamburgerButton from "./HamburgerButton";
 
 const links = [
     { text: "Products", link: "" },
@@ -17,7 +18,12 @@ const NavContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 `;
-const Navigation = styled.nav``;
+const Navigation = styled.nav`
+    display: none;
+    @media (min-width: 1000px) {
+        display: flex;
+    }
+`;
 const UnorderedList = styled.ul`
     display: flex;
     gap: var(--space-50);
@@ -29,7 +35,12 @@ const Link = styled.a`
     font-weight: 600;
     line-height: var(--space-30);
 `;
-const NavigationAction = styled(Link)``;
+const NavigationAction = styled(Link)`
+    display: none;
+    @media (min-width: 1000px) {
+        display: flex;
+    }
+`;
 
 const TopNavigation = () => {
     return (
@@ -46,6 +57,7 @@ const TopNavigation = () => {
                     </UnorderedList>
                 </Navigation>
                 <NavigationAction>Sign in</NavigationAction>
+                <HamburgerButton />
             </NavContainer>
         </Header>
     );
