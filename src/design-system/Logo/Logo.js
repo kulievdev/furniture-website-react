@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <div>
             <p className="logo">
-                Whiter<span>.</span>
+                Infinita<span>.</span>
             </p>
         </div>
     );

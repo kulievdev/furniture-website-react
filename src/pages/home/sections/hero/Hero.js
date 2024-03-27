@@ -151,11 +151,11 @@ const Hero = () => {
                 <HeroContent>
                     <HeroSlogan>Quality Design For ALl</HeroSlogan>
                     <HeroHeading>
-                        Bring back the classic look by using Whiter. Easy home
+                        Bring back the classic look by using Infinita. Easy home
                         delivery!
                     </HeroHeading>
                     <HeroText>
-                        Rediscover the timeless allure of the past as Whiter
+                        Rediscover the timeless allure of the past as Infinita
                         effortlessly revives the beloved vintage aesthetic.
                     </HeroText>
                     <HeroFooter>

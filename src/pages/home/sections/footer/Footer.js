@@ -83,7 +83,7 @@ const Footer = () => {
                         We make furniture with love and passions. No doubt,
                         really.
                     </AboutBrandText>
-                    <AboutBrandCopyright>© Whiter Inc.</AboutBrandCopyright>
+                    <AboutBrandCopyright>© Infinita Inc.</AboutBrandCopyright>
                 </AboutBrandWrapper>
                 <FooterCardWrapper>
                     <FooterCard
