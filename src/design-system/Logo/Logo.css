@@ -2,6 +2,7 @@
     color: var(--super-dark-navy);
     font-size: var(--space-30);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .logo span {

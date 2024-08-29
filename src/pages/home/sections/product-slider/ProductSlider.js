@@ -52,7 +52,9 @@ const ProductSliderArrowWrapper = styled.div`
     gap: var(--space-22);
 `;
 
-const ProductSliderArrow = styled.img``;
+const ProductSliderArrow = styled.img`
+    cursor: pointer;
+`;
 
 const ProductSliderImageCardWrapper = styled.div`
     display: flex;

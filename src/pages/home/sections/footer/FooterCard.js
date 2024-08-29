@@ -45,13 +45,34 @@ const FooterCard = (props) => {
             <Navigation>
                 <UnorderedList>
                     <List>
-                        <Link href="#">{props.info1}</Link>
+                        <Link
+                            href=""
+                            onClick={(event) => {
+                                event.preventDefault();
+                            }}
+                        >
+                            {props.info1}
+                        </Link>
                     </List>
                     <List>
-                        <Link href="#">{props.info2}</Link>
+                        <Link
+                            href=""
+                            onClick={(event) => {
+                                event.preventDefault();
+                            }}
+                        >
+                            {props.info2}
+                        </Link>
                     </List>
                     <List>
-                        <Link href="#">{props.info3}</Link>
+                        <Link
+                            href=""
+                            onClick={(event) => {
+                                event.preventDefault();
+                            }}
+                        >
+                            {props.info3}
+                        </Link>
                     </List>
                 </UnorderedList>
             </Navigation>

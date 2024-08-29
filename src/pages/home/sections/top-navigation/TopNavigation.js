@@ -65,7 +65,14 @@ const TopNavigation = () => {
                     <UnorderedList>
                         {links.map((link, idx) => (
                             <List key={idx}>
-                                <Link href={link.link}>{link.text}</Link>
+                                <Link
+                                    href={link.link}
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                    }}
+                                >
+                                    {link.text}
+                                </Link>
                             </List>
                         ))}
                     </UnorderedList>
